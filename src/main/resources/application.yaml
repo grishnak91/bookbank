@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    password: bookbank
+    username: bookbank
+    url: jdbc:mysql://localhost:3306/bookbank
+    
+logging:
+  level:
+    root: warn
+    '[com.promineotech]' : debug
