@@ -1,7 +1,6 @@
 package com.promineotech.bookbank.service;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -59,9 +58,9 @@ public class DefaultBookBankService implements BookBankService {
   }
 
   @Override
-  public List<Genre> fetchGenre(String genreName) {
-    log.info("fetches genre via genreName={}", genreName);
-    return bookBankDao.fetchGenre(genreName);
+  public List<Genre> fetchGenre(Long genrePK) {
+    log.info("fetches genre via genrePK={}", genrePK);
+    return bookBankDao.fetchGenre(genrePK);
   }
 
   @Override

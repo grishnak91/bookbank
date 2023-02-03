@@ -51,16 +51,16 @@ public interface GenreController {
       },
       parameters = {
           @Parameter(
-              name = "genreName", 
+              name = "genrePK", 
               allowEmptyValue = false, 
               required = false, 
-              description = "The genre name (i.e., 'Sci-Fi')")
+              description = "1-10")
       }
       )
   
   @GetMapping
   @ResponseStatus(code = HttpStatus.OK)
   List<Genre> fetchGenre( 
-      String genreName);
+      Long genrePK);
   //@formatter: on
 }

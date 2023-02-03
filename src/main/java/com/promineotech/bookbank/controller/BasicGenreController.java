@@ -15,9 +15,9 @@ public class BasicGenreController implements GenreController {
   private BookBankService bookBankService;
 
   @Override
-  public List<Genre> fetchGenre(String genreName) {
-    log.info("fetches a genre via genreName={}", genreName);
-    return bookBankService.fetchGenre(genreName);
+  public List<Genre> fetchGenre(Long genrePK) {
+    log.info("fetches a genre via genrePK={}", genrePK);
+    return bookBankService.fetchGenre(genrePK);
   }
 
 }

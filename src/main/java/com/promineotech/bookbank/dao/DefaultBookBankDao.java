@@ -175,28 +175,28 @@ public class DefaultBookBankDao implements BookBankDao {
   }
 
   @Override
-  public List<Genre> fetchGenre(String genreName) {
+  public List<Genre> fetchGenre(Long genrePK) {
     
     //@formatter: off
     String sql = ""
         + "SELECT * "
         + "FROM genres "
-        + "WHERE genre_name = :genre_name";
+        + "WHERE genre_pk = :genre_pk";
     //@formatter: on
     
     Map<String, Object> params = new HashMap<>();
-    params.put("genre_name", genreName);
+    params.put("genre_pk", genrePK);
     
     return jdbcTemplate.query(sql, params, new RowMapper<>() {
       @Override
       public Genre mapRow(ResultSet rs, int rowNum) throws SQLException {
-        //@formatter: off
+      //@formatter: off
         return Genre.builder()
-            .genreName(genreName)
+            .genrePK(rs.getLong("genre_pk"))
+            .genreName(rs.getString("genre_name"))
             .build();
-        //@formatter: on
-      }
-    });
+      //@formatter: on  
+      }});
   
     }
 

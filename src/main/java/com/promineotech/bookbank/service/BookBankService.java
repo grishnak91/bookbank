@@ -21,7 +21,7 @@ public interface BookBankService {
 
   Optional<Book> deleteBook(Long bookPK);
 
-  List<Genre> fetchGenre(String genreName);
+  List<Genre> fetchGenre(Long genrePK);
 
   List<Book> fetchBookByGenre(Long genreFK);
 
