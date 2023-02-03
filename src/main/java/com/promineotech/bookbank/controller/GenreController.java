@@ -54,7 +54,8 @@ public interface GenreController {
               name = "genrePK", 
               allowEmptyValue = false, 
               required = false, 
-              description = "1-10")
+              description = "1: Fiction, 2: Non-Fiction, 3: Thriller, 4: Espionage, 5: Sci-Fi, "
+                  + "6: Fantasy, 7: Adventure, 8: Psychological Thriller, 9: Mind-Bender, 10: Drama")
       }
       )
   

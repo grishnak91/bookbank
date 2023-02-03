@@ -55,9 +55,9 @@ public interface BookAuthorController {
               allowEmptyValue = false, 
               required = false, 
               description = 
-              "1: C.S. Lewis, 2: Tom Clancy, 3: Robert Ludlum, 4: Nicholas Cage, 5: Grendel, "
-              + "6: Furious George, 7: Zeus, 8: Haruki Murakami, 9: Ursula Le Guinn, 10: Neil Gaiman"
-              + " 11: Terry Pratchett"
+              "1: C.S. Lewis, 2: Tom Clancy, 3: Robert Ludlum, "
+              + "4: Haruki Murakami, 5: Ursula Le Guinn, 6: Neil Gaiman"
+              + " 7: Terry Pratchett"
               )
       }
       )

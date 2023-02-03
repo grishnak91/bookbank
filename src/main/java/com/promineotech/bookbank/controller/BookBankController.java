@@ -60,7 +60,10 @@ public interface BookBankController {
               name = "bookPK", 
               allowEmptyValue = false, 
               required = false, 
-              description = "1-8")
+              description = "1: 'The Lion, The Witch, and The Wardrobe', 2: 'Rainbow Six', "
+                  + "3: 'Hunt for the Red October', 4: 'The Screwtape Letters', "
+                  + "5: 'The Bourne Identity', 6: 'The Wind-up Bird Chronicle', "
+                  + "7: 'A Wizard of Earthsea', 8: 'Good Omens'")
       }
       )
   
@@ -208,7 +211,10 @@ public interface BookBankController {
               name = "bookPK", 
               allowEmptyValue = false, 
               required = false, 
-              description = "Enter a Valid bookPK 1-8")
+              description = "1: 'The Lion, The Witch, and The Wardrobe', 2: 'Rainbow Six', "
+                  + "3: 'Hunt for the Red October', 4: 'The Screwtape Letters', "
+                  + "5: 'The Bourne Identity', 6: 'The Wind-up Bird Chronicle', "
+                  + "7: 'A Wizard of Earthsea', 8: 'Good Omens'")
       }
       )
   
