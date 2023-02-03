@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @Builder
 public class BookAuthor {
-  private Book bookPK;
-  private Author authorPK;
+  private Book bookFK;
+  private Author authorFK;
 }

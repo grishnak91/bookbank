@@ -11,6 +11,7 @@ public class Book {
   public String bookName;
   public int numPages;
   public String notes;
+  private Long readerFK;
   
   @JsonIgnore
   public Long getBookPK() {

@@ -9,15 +9,15 @@ import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @Slf4j
-public class BasicBookAuthorController implements BookAuthorController {
+public class BasicBookGenreController implements BookGenreController {
   
   @Autowired
   private BookBankService bookBankService;
 
   @Override
-  public List<Book> fetchBookByAuthor(Long authorFK) {
-    log.info("fetches a list of books givevn a valid authorFK={}", authorFK);
-    return bookBankService.fetchBookByAuthor(authorFK);
+  public List<Book> fetchBookByGenre(Long genreFK) {
+    log.info("fetches a list of book given a genreFK={}", genreFK);
+    return bookBankService.fetchBookByGenre(genreFK);
   }
 
 }
